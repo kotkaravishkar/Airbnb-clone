@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.2",
     "@heroicons/react": "^1.0.6",
     "@next/font": "13.1.6",
+    "date-fns": "^2.29.3",
+    "date-range": "^0.0.2",
     "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-date-range": "^1.4.0",
+    "react-dom": "18.2.0",
+    "react-map-gl": "^7.0.21"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

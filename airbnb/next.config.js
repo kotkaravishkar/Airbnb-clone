@@ -1,10 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
-
 module.exports = {
+  reactStrictMode: true,
   images: {
-    domains: ["imagesvc.meredithcorp.io","links.papareact.com","i.ibb.co", "a0.muscache.com","res.cloudinary.com", "media.giphy.com","static.dezeen.com","cdn.dribbble.com","teahub.io"],
+    domains: [
+      "upload.wikimedia.org",
+      "cdn.freelogovectors.net",
+      "a0.muscache.com",
+      "images.contentstack.io",
+      "pbs.twimg.com",
+      "links.papareact.com"],
   },
+  env:{
+    mapbox_key:"pk.eyJ1IjoiYXZpc2hrYXIxOCIsImEiOiJjbGUwZTJqb2wxYWw0M29waHNjdGQzNDdnIn0.pB3Smlc8hajmV1nmvEGVcw"
+  }
 };
