@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ReactMapGl from "react-map-gl"
-import  getCenter  from 'geolib/es/getCenter';
-import { Marker, Popup } from 'react-map-gl';
+import { Marker, Popup } from "react-map-gl";
+import getCenter from "geolib/es/getCenter"
 
 function Map({searchResults}) {
 
