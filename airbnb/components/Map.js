@@ -6,7 +6,6 @@ import getCenter from "geolib/es/getCenter"
 function Map({searchResults}) {
 
   const [selectedLocation, setSelectedLocation] = useState({});
-  
 
   const coordinates = searchResults.map(result =>({
     longitude:result.long,
@@ -14,7 +13,7 @@ function Map({searchResults}) {
   }));
 
 
-  const center = getCenter(coordinates);
+ const center = getCenter(coordinates);
 
 const [viewport, setViewport] = React.useState({
   width:'100%',
@@ -46,7 +45,6 @@ const [viewport, setViewport] = React.useState({
           >📌
 
           </p>
-
         </Marker>
         {selectedLocation.long === result.long ?(
           <Popup
@@ -64,10 +62,7 @@ const [viewport, setViewport] = React.useState({
       </div>
     ))}
 
-
   </ReactMapGl>
   )}
-
-
 
 export default Map

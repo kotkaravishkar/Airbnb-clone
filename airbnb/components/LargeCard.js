@@ -8,11 +8,11 @@ function LargeCard({img, title, description, butonText}) {
         <Image  src={img} layout="fill" objective="cover" className="rounded-2xl" />
         </div>
         <div className="absolute top-32 left-12">
-            <h3>{title}</h3>
+        <h3>{title}</h3>
             <p>{description}</p>
 
-            <button className="text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5">{butonText}</button>
-
+            <button className="text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5">{butonText}
+            </button>
         </div>
     </section>
   )
