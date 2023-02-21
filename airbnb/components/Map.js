@@ -12,7 +12,6 @@ function Map({searchResults}) {
     latitude: result.lat,
   }));
 
-
  const center = getCenter(coordinates);
 
 const [viewport, setViewport] = React.useState({
@@ -24,7 +23,6 @@ const [viewport, setViewport] = React.useState({
 });
 
   return (
-  
   <ReactMapGl
   mapStyle="mapbox://styles/avishkar18/cle0ebjzf000l01mt5zgy84dy"
   mapboxAccessToken={process.env.mapbox_key}
@@ -43,7 +41,6 @@ const [viewport, setViewport] = React.useState({
           <p onClick={()=>selectedLocation(result)} className="cursor-pointer text-2xl animate-bounce"
           aria-label='push-pin'
           >📌
-
           </p>
         </Marker>
         {selectedLocation.long === result.long ?(
@@ -61,7 +58,6 @@ const [viewport, setViewport] = React.useState({
 
       </div>
     ))}
-
   </ReactMapGl>
   )}
 
